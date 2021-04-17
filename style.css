@@ -1,0 +1,165 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#navbar {
+  display: flex;
+  font-weight: 700;
+  width: 100%;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+  border-bottom: 2px #fff solid;
+}
+
+.links {
+  padding-left: 1rem;
+}
+
+.links a {
+  padding: 0.5rem 2rem;
+}
+
+.links a:hover {
+  border-bottom: 2px #fff solid;
+}
+
+#showcase {
+  padding: 4rem;
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  border-bottom: 2px #fff solid;
+}
+
+#showcase p {
+  font-size: 2rem;
+  font-weight: 300;
+  padding: 1rem 0;
+}
+
+#showcase h1 {
+  font-size: 4rem;
+}
+
+#showcase .text {
+  font-size: 2rem;
+  width: 80%;
+  font-weight: 300;
+  padding: 1rem 0;
+}
+
+#experience {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  border-bottom: 2px #fff solid;
+}
+
+#experience .box-1 {
+  font-size: 2rem;
+  width: 80%;
+  font-weight: 300;
+  padding: 1rem 0;
+  margin: 10px 0;
+}
+
+#project {
+  padding: 4rem;
+}
+
+#project h2 {
+  margin: 10px 0px;
+}
+
+#project .project-inn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+#project .project-inn .box-2 p{
+  padding: 10px;
+  font-weight: 700;
+}
+
+#project .project-inn .box-3 {
+  height: 100%;
+  line-height: 2;
+}
+
+#project .project-inn .box-3 li {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+footer {
+  font-weight: 700;
+  text-align: center;
+  padding: 10px;
+}
+
+@media (max-width: 568px) {
+
+  body {
+    width: 100%;
+  }
+  
+  #navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  #navbar .links {
+    display: flex;
+    padding-left: 0;
+  }
+
+  #showcase {
+    height: 100%;
+  }
+
+  #project .project-inn {
+    flex-direction: column;
+  }
+
+  #showcase {
+    padding: 2.5rem;
+  }
+
+  #showcase .text {
+    width: 100%;
+    line-height: 1.4;
+  }
+
+  #experience {
+    padding: 2rem;
+  }
+
+  #experience .box-1 {
+    width: 100%;
+    line-height: 1.4;
+    font-size: 1.5rem;
+  }
+}
